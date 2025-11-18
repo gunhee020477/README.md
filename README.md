@@ -80,14 +80,57 @@ https://youtube.com
 
 ---
 
-### 1) 메인 화면
-![Main](https://via.placeholder.com/1200x600?text=%EB%A9%94%EC%9D%B8+%ED%99%94%EB%A9%B4)
+## 📸 Streamlit 실행 화면 예시
 
-### 2) 국가 검색 화면
-![Search](https://via.placeholder.com/1200x600?text=%EA%B5%AD%EA%B0%80+%EA%B2%80%EC%83%89)
+아래는 본 프로젝트의 Streamlit 대시보드 기능별 결과 화면 예시입니다.  
+(이미지는 샘플이며, 실제 실행 후 캡처하여 교체 가능합니다.)
 
-### 3) 세계 지도 화면
-![Map](https://via.placeholder.com/1200x600?text=%EC%84%B8%EA%B3%84+%EC%A7%80%EB%8F%84+%EC%8B%9C%EA%B0%81%ED%99%94)
+---
 
-### 4) 추천 기능 화면
-![Recommend](https://via.placeholder.com/1200x600?text=%EC%B6%94%EC%B2%9C+TOP+5)
+### 🏠 1) 메인 화면
+
+사용자가 사이드바에서 메뉴를 선택할 수 있는 초기 화면입니다.
+
+![Main Screen](https://via.placeholder.com/1200x600.png?text=Main+Screen+-+Travel+Analysis+Dashboard)
+
+---
+
+### 📁 2) 데이터 미리보기
+
+CSV 두 종류:
+- 국민 해외관광객 연도별 데이터
+- 국가별 SNS 및 플랫폼 활용 데이터
+
+을 탭으로 구분하여 확인할 수 있는 화면입니다.
+
+![Data Preview](https://via.placeholder.com/1200x600.png?text=Data+Preview+-+df1+%26+df2)
+
+---
+
+### 🔍 3) 국가 검색 기능
+
+- 특정 국가명 입력 → 해당 국가의 SNS 활용 지표 필터링
+- Bar Chart / Line Chart 자동 생성
+- 연도별 플랫폼 활용도 변화 확인 가능
+
+![Search Screen](https://via.placeholder.com/1200x600.png?text=Country+Search+-+SNS+Usage+Graphs)
+
+---
+
+### 🗺️ 4) 세계 지도 시각화
+
+Plotly Choropleth 지도 기반  
+각 나라의 SNS 총점(SNS총점) 분포를 시각적으로 표현합니다.
+
+![World Map](https://via.placeholder.com/1200x600.png?text=World+Map+-+SNS+Score+Visualization)
+
+---
+
+### 🌟 5) 국가 추천 기능
+
+- 성별 + 연령대 입력  
+- 해외 출국자수 기반 User Strength 계산  
+- SNS 점수와 가중치를 조합해 추천 국가 산출  
+- TOP 5 국가를 표와 막대그래프로 제공
+
+![Recommend Screen](https://via.placeholder.com/1200x600.png?text=Recommended+TOP+5+Countries)
